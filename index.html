@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WatchGallery | Welcome</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style>
+	 #msg {
+		 visibility: hidden;
+		 min-width: 250px;
+		 background-color: lightblue;
+		 color: #000;
+		 text-align: right;
+		 border-radius: 2px;
+		 padding: 16px;
+		 position: fixed;
+		 z-index: 1;
+		 right: 30%;
+		 top: 30px;
+		 font-size: 17px;
+		 margin-right:30px;
+	}
+
+	#msg.show {
+		 visibility: visible;
+		 -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+		 animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	}
+
+	@-webkit-keyframes fadein {
+		 from {top: 0; opacity: 0;}
+		 to {top: 30px; opacity: 1;}
+	}
+
+	@keyframes fadein {
+		 from {top: 0; opacity: 0;}
+		 to {top: 30px; opacity: 1;}
+	}
+
+	@-webkit-keyframes fadeout {
+		 from {top: 30px; opacity: 1;}
+		 to {top: 0; opacity: 0;}
+	}
+
+	@keyframes fadeout {
+		 from {top: 30px; opacity: 1;}
+		 to {top: 0; opacity: 0;}
+	}
+</style>
+</head>
+<body>
+<header>
+	<div class="container">
+		<div id="branding">
+			<h1>WatchGallery</h1>
+		</div>
+			<nav>
+				<ul>
+					<li class="active"><a href="../html/index.html">Home</a> </li>
+					<li> <a href="../html/about.html">About</a></li>
+					<li> <a href="../html/services.html">Services</a></li>
+					<li> <a href="../html/contact.html">Contact</a></li>
+					<li> <a href="../html/gallery.html">Gallery</a></li>
+					<li> <a href="../html/Feedback.html">Feedback</a></li>
+				</ul>
+			</nav>
+	</div>
+</header>
+
+<section id="showcase">
+	<div class="container">
+		<h1>We Provide you with our most Top end watches</h1>
+		<p> WatchGallery is a web design to showcase some of the finest watches from top end to middle end watches that had been built and showcase it in here.
+			 	WatchGallery help youu find what you looking for in this world of watches</p>
+	</div>
+</section>
+
+<section id="newsletter">
+	<div class="container">
+		<h1> Subscribe to our gallery for more notification </h1>
+		<form>
+			<input type="email" placeholder="Enter Email ">
+			<input type="button" value="Subscribe" class="buttonsubs" onclick="myFunction()">
+	        <div id="msg">Thank you for Subscribing to us. We will notify  you when there are new watches.</div>
+		</form>
+	</div>
+</section>
+<script>
+	function myFunction() {
+		var x = document.getElementById("msg");
+		x.className = "show";
+		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	}
+</script>
+
+<section id="boxes">
+	<div class="container">
+		<div class="box">
+			<h3>We make sure you never run out of time</h3>
+				<p>
+				we make sure that you always have a watch to take whenever and wherever yo go to.
+				And make you feel confident when you look into your watch. visit our gallery for more watches
+				</p>
+		</div>
+		<div class="box">
+			<h3>We Provide services for watch repair</h3>
+				<p>
+				Our website provide services online that are the same as top end watches but with great deals and great price. You can find our company call centre in the about us.
+				</p>
+		</div>
+		<div class="box">
+			<h3>Graphic Design</h3>
+				<p>
+				We design the watches using most detailed graphic design, we hire many graphic designer to built and to make ideas of new watches.
+				the watch that we store is a high end watches which cost thousand of dolars. here you can look at it and know what the prise is.
+				So you wont have to use you credit card again instead using you cash.
+				</p>
+		</div>
+	</div>
+</section>
+<footer>
+	<p>
+		WatchGallery | Welcome to the Watch World, Copyright @2020;
+	</p>
+</footer>
+</body>
+</html>
